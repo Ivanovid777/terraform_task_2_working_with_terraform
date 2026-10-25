@@ -1,16 +1,3 @@
-terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "5.11.0"
-    }
-    time = {
-      source  = "hashicorp/time"
-      version = "~> 0.12"
-    }
-  }
-}
-
 resource "azurerm_resource_group" "test_resource_group" {
   name     = var.resource_group_name
   location = var.location
